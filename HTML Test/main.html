@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript" src="src.js"></script>
+</head>
+<body onload="courseLoad()">
+
+<form action="thanks.html" method='post'>
+<table>
+
+<tr><td><input type="text" id='fName' placeholder="First Name" onkeypress = "checkName(event)" required="true"></td>
+	<td><input type="text" placeholder="Last Name" id='lName' onkeypress="checkName(event)" required="true"></td>
+</tr>
+<tr>
+<td>DOB:</td><td><input type='date' id='dob' onclick = "yearsAgo()" required="true"></td>
+</tr>
+
+	<tr>
+	<td><select id='course' onchange='branchLoad()' required="true">
+	<option>select</option>
+	</select>
+	</td>
+	<td>
+	<select id ='branch' required='true'></select>
+	</td>
+	</tr>
+	<tr>
+	<td>Password:</td>
+	<td><input type="password" id="pass" placeholder = "password" required='true'></td>
+	<td><input type="checkbox" id='show' onclick="passShow()"></td>
+	
+	</tr>
+	
+	<tr>
+	<td><input type="button" value="submit"></td>
+	</tr>
+</table>
+</form>
+</body>
+</html>
