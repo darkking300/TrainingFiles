@@ -45,7 +45,15 @@ function branchLoad(){
 
 
 	}
-
+function checkPass(){
+	var mainPass = document.getElementById("pass").value;
+	var confirmPass = document.getElementById("duplicate").value;
+	if(mainPass != confirmPass){
+		alert('the entered passwords must match')
+		return false;
+	}
+}
+	
 function yearsAgo(){
 		var d = new Date();
 		var year = d.getFullYear();
