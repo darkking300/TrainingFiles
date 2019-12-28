@@ -27,12 +27,13 @@
 	<tr>
 	<td>Password:</td>
 	<td><input type="password" id="pass" placeholder = "password" required='true'></td>
+	<td><input type="password" id="duplicate" placeholder="confirm password" required='true'>
 	<td><input type="checkbox" id='show' onclick="passShow()"></td>
 	
 	</tr>
 	
 	<tr>
-	<td><input type="button" value="submit"></td>
+	<td><input type="submit" value="submit" onclick=" return checkPass()"></td>
 	</tr>
 </table>
 </form>
